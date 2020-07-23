@@ -3,7 +3,7 @@
 BUILD and TEST::
 
 1) Clone the repository.
-2) Run gradle build - It will run the test cases and also create the executable jar at path src/build/libs
+2) Run gradlew clean build - It will run the test cases and also create the executable jar at path build/libs
 3) Run the jar from the path or provide the full path while running the jar command - java -jar PriceRuleEngine.jar
 4) On the command prompt enter the skus to be scanned (can be invalid or valid), to stop scanning press (X/x) and it will compute the value and display.
 

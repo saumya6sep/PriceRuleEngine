@@ -1,37 +1,12 @@
 	plugins {
-	    id 'java-library'
+	    id 'java'
 	}
 
-	
-
-	sourceSets {
-	    main {
-	        java {
-	            srcDirs = ['main']
-	        }
-	        
-	        resources {
-            srcDirs = ['main/resources']
-        	}
-	        
-	    }
-	    
-		 test {
-		        java {
-		            srcDirs = ['test']
-		        }
-		        
-		        resources {
-            		srcDirs = ['main/resources']
-        		}
-		 }
-	}
 	
 	jar {
 	  manifest {
 	    attributes(
-	      'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
-	      'Main-Class': 'main.java.com.ruleengine.checkout.Checkout'
+	       'Main-Class': 'main.java.com.ruleengine.checkout.Checkout'
 	    )
 	  }
 	}
